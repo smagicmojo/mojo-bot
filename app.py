@@ -1,4 +1,3 @@
-import imghdr
 import os, time, sqlite3, threading
 from flask import Flask, request, jsonify
 from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -117,3 +116,4 @@ threading.Thread(target=weekly_task, daemon=True).start()
 if __name__ == "__main__":
 
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+
