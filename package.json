@@ -1,0 +1,17 @@
+{
+  "name": "mojo-presale-alerts",
+  "version": "1.0.0",
+  "description": "Webhook server to post $MOJO presale buy alerts to Telegram (designed for Render).",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
